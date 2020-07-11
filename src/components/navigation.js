@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const naviLinks = [
     {
@@ -26,7 +27,7 @@ export default function Navigation() {
             <ul>
                 {naviLinks.map((link, index) => (
                     <li key={index}>
-                        {link.title}
+                        <Link to={link.path}>{link.title}</Link>
                     </li>
                 ))}
             </ul>
