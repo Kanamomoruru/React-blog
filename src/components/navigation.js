@@ -21,11 +21,11 @@ const naviLinks = [
     },
 ]
 
-export default function Navigation() {
+export default function Navigation({user}) {
     return (
         <nav className="site-navigation">
             <span className="menu-title">My React Blog</span>
-            <div>
+            <div className="menu-content-container">
                 <ul>
                     {naviLinks.map((link, index) => (
                         <li key={index}>
@@ -33,8 +33,13 @@ export default function Navigation() {
                         </li>
                     ))}
                 </ul>
+                <span>
+                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} />
+                    <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
+                </span>
+                
             </div>
-            <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+       
         </nav>
     )
 }
