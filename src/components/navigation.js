@@ -26,7 +26,7 @@ export default function Navigation({user}) {
     return (
         <nav className="site-navigation">
             <span className="menu-title">My React Blog</span>
-            <div className="menu-content-container">
+            <div className={`menu-content-container ${menuActive && 'active'}`}>
                 <ul>
                     {naviLinks.map((link, index) => (
                         <li key={index}>
@@ -37,11 +37,9 @@ export default function Navigation({user}) {
                 <span>
                     <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} />
                     <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
-                </span>
-                <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)}/>
-                
+                </span> 
             </div>
-       
+            <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)}/>
         </nav>
     )
 }

@@ -14,10 +14,18 @@
         margin-left: 30px;
     }
 
+    .ion-ios-menu {
+        font-size: 36px;
+        width: 65px;
+        align-items: center;
+        cursor: pointer;
+        display: none;
+    }
+
     .menu-content-container {
         display: flex;
         align-items: center;
-        margin-right: 30px;
+        padding-right: 30px;
 
         .ant-avatar {
             background: $background;
@@ -27,14 +35,6 @@
         .menu-avatar-name {
             font-size: 18px;
             margin-left: 15px;
-        }
-        
-        .ion-ios-menu {
-            font-size: 36px;
-            width: 65px;
-            align-items: center;
-            cursor: pointer;
-            display: none;
         }
     }
 
@@ -64,10 +64,20 @@
 @media screen and (max-width: 900px) {
     .site-navigation {
         .menu-content-container {
-             
-            .ion-ios-menu {
-                display: flex;
+            width: 300px;
+            height: calc(100% - 65px);
+            background: white;
+            position: absolute;
+            top: 65px;
+            left: -300px;
+            transition: 300ms ease left;
+
+            &.active {
+                left: 0px;
             }
+        }
+        .ion-ios-menu {
+            display: flex;
         }
     }
 }
