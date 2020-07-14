@@ -13,14 +13,14 @@ export default [
         data: moment().format('MMMM DD, YYYY'),
         categories: ['Cloud'],
         link: '#',
-        image: 'cloud_storage.jpeg',
+        image: 'cloud_storage.jpg',
     },
     {
         title: 'Popular Programming Languages in 2020',
         data: moment().format('MMMM DD, YYYY'),
         categories: ['Tech News', 'Tech Culture'],
         link: '#',
-        image: 'programming_language.jpeg',
+        image: 'programming_language.jpg',
     },
     {
         title: 'Braing Hacks for Learning to Programming',

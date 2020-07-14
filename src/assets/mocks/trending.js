@@ -20,7 +20,7 @@ export default [
         data: moment().format('MMMM DD, YYYY'),
         categories: ['Tech Culture'],
         link: '#',
-        image: 'puzzled_programmer.jpeg',
+        image: 'puzzled_programmer.jpg',
     },
     {
         title: 'Braing Hacks for Learning to Program',
