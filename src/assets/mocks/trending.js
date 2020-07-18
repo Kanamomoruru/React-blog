@@ -6,7 +6,7 @@ export default [
         data: moment().format('MMMM DD, YYYY'),
         categories: ['Tech Culture'],
         link: '#',
-        image: 'money.jpg',
+        image: 'Bali.jpeg',
     },
     {
         title: 'GraphQL vs REST',
