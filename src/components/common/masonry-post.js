@@ -1,5 +1,5 @@
 import React from 'react'
-import categoryColors from './styles'
+import { categoryColors } from './styles'
 
 export default function MasonryPost({ post, tagOnTop}) {
     const style = {backgroundImage: `url("${require(`../../assets/images/${post.image}`)}")`} ;
@@ -13,6 +13,7 @@ export default function MasonryPost({ post, tagOnTop}) {
                                 {tag.toUpperCase()}
                             </span>
                     )}
+                 
                 </div>
                 <div>
                     <h2 className="image-title">{post.title}</h2>
