@@ -7,7 +7,7 @@ export default function Home() {
         <section className="container home">
             <div className="row">
                 <h2>Trending Posts</h2>
-                <PostMasonry posts={trending} column={3}/>
+                <PostMasonry posts={trending} columns={3}/>
             </div>
         </section>
     )
