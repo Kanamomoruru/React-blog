@@ -4,17 +4,17 @@ import trending from '../assets/mocks/trending'
 
 const trendingConfig = {
     1: {
-        gridAria: '1 / 2 / 3 / 3'
+        gridArea: '1 / 2 / 3 / 3' 
     }
 }
 
-const mergeStyle = function(posts, config) {
+const mergeStyles = function(posts, config) {
     posts.forEach((post, index) => {
         post.style = config[index]
     })
 }
 
-mergeStyle(trending, trendingConfig);
+mergeStyles(trending, trendingConfig);
 
 export default function Home() {
     return (

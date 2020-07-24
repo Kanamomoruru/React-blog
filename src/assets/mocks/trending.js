@@ -28,5 +28,12 @@ export default [
         categories: ['Brain Health'],
         link: '#',
         image: 'neuron.jpg',
+    },
+    {
+        title: 'Vue vs React',
+        data: moment().format('MMMM DD, YYYY'),
+        categories: ['Tech Culture'],
+        link: '#',
+        image: 'programming_language.jpg',
     }
 ]
