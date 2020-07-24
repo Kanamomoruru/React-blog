@@ -5,7 +5,7 @@ export default function MasonryPost({ post, tagOnTop}) {
     const imageBackground = {backgroundImage: `url("${require(`../../assets/images/${post.image}`)}")`} ;
 
     const style = {...imageBackground, ...post.style}
-    
+
     return (
         <a className="masonry-post overlay" style={style} href={post.link}>
             <div className="image-text">
@@ -20,6 +20,7 @@ export default function MasonryPost({ post, tagOnTop}) {
                 </div>
                 <div>
                     <h2 className="image-title">{post.title}</h2>
+                    <p className="image-date">{post.date}</p>
                 </div>
             </div>
         </a>
