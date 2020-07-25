@@ -9,7 +9,7 @@ export default function MasonryPost({ post, tagsOnTop}) {
 
     return (
         <a className="masonry-post overlay" style={style} href={post.link}>
-            <div className="image-text">
+            <div className="image-text" style={{justifyContent: tagsOnTop ? 'space-between' : 'flex-end'}}>
                 <div className="tags-container">
                     {
                         post.categories.map((tag, index) => 
