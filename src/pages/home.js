@@ -30,10 +30,10 @@ const mergeStyles = function(posts, config) {
     })
 }
 
-const lastFeatured = featured.pop();
-
 mergeStyles(trending, trendingConfig);
 mergeStyles(featured, featuredConfig);
+
+const lastFeatured = featured.pop();
 
 export default function Home() {
     return (
