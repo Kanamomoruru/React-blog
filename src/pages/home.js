@@ -1,5 +1,5 @@
 import React from 'react';
-import {PostMasonry, MasonryPost} from '../components/common/'
+import {PostMasonry, MasonryPost, PostGrid} from '../components/common/'
 import trending from '../assets/mocks/trending'
 import featured from '../assets/mocks/featured'
 
